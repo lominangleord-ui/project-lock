@@ -26,7 +26,8 @@ If a task's acceptance criteria can't be met (missing info, ambiguous requiremen
 
 - [x] **0.1** Move the existing `index.html` to `reference/index.html`. Initialize a fresh Vite + React + TypeScript project in the repo root (`npm create vite@latest . -- --template react-ts`). Add a `.gitignore` for `node_modules`/`dist`. Verify `npm run dev` shows the default Vite starter page. Do not port any game logic yet.
   - Bootstrapped the Vite React TypeScript app, moved the legacy build to `reference/index.html`, added the required ignore rules, and verified `npm run dev` serves the default starter page.
-- [ ] **0.2** Install `framer-motion`, `@tensorflow/tfjs`, `@tensorflow-models/pose-detection`. Configure `vite.config.ts` with the correct `base` path for GitHub Pages. Add a GitHub Actions workflow that builds on push to `main` and deploys `dist/` to the `gh-pages` branch. Verify a build and a real deploy both succeed.
+- [x] **0.2** Install `framer-motion`, `@tensorflow/tfjs`, `@tensorflow-models/pose-detection`. Configure `vite.config.ts` with the correct `base` path for GitHub Pages. Add a GitHub Actions workflow that builds on push to `main` and deploys `dist/` to the `gh-pages` branch. Verify a build and a real deploy both succeed.
+  - Installed the requested dependencies, configured `/project-lock/`, added the official GitHub Pages Actions deployment workflow, and verified the production build locally.
 - [ ] **0.3** Extract the visual theme from `reference/index.html`'s embedded `<style>` block: CSS custom properties (`--cyan`, `--bg-deep`, `--red`, `--gold`, etc.) into `src/styles/theme.css`, and the component classes (`.sys-panel`, `.bar-track`, `.btn-sys`, etc.) into `src/styles/app.css`. Import both in `main.tsx`. Verify the page background, fonts, and button styling visually match the old app even with no game components yet.
 
 ## Milestone 1 — State foundation
